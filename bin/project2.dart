@@ -29,18 +29,21 @@ void main(List<String> arguments) {
   // print (setnilai1.intersection(setnilai2));
 
   
-    var setnilai1 = <String>{};
-    stdout.writeln("Jumlah data setNilai = " );
-    String? input1 = stdin.readLineSync();
-    int jumlah1 = (int.tryParse(input1 ?? '')) ?? 0;
+    var sudah = {'nim' : '101', 'nama': 'aldo', 'umur': 20};
+    print (sudah);
+    print (sudah['nama']);
 
-    for (var i = 0; i < jumlah1; i++) {
-      stdout.writeln('Masukan nilai ke-${i + 1} = ');
-      String? inputNilai = stdin.readLineSync();
-      String nilai = inputNilai ?? '';
-      setnilai1.add(nilai);     
+    var opo = {
+      'nim': ['101', '102'],
+      'nama': ['aldo', 'budi'],
+      'umur': [20,21],
+    };
+
+    print(opo);
+    print(opo['nama']![1]);
     }
-  }
+    
+  
 
 
 
